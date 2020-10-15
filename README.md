@@ -7,16 +7,31 @@ Puedes ver la aplicación desplegada [aquí](https://master.d2alqgrvtd56xj.ampli
 
 ## Contribuye
 
-Para poder contribuir a este proyecto debes seguir estos pasos:
+### Requisitos
 
-0. Tener instalado git.
+- Tener instalado git.
 
-1. Clonar éste repositorio en tu computadora:
+- Clona éste repositorio en tu computadora:
 ```bash
 $ git clone https://github.com/ramrodo/new-port-eyes.git
 ```
 
+### ¿Cómo contribuir al código?
+
+0. Asegúrate de estar en la rama `master`:
+
+```bash
+$ git checkout master
+```
+
+1. Actualiza la rama `master`:
+
+```bash
+$ git pull
+```
+
 2. Cambiar a tu rama:
+
 ```bash
 $ git checkout <nombre>
 ```
@@ -29,23 +44,30 @@ Los nombres de las ramas son:
 - susana
 - valentina
 
-3. Realizar tus cambios en el código
+3. Actualiza tu rama con `master`:
 
-4. Una vez que has terminado de hacer tus cambios, añadirlos:
+```
+$ git rebase master
+```
+
+4. Realiza tus cambios en el código
+
+5. Una vez que has terminado de hacer tus cambios, añádelos:
 
 ```bash
 $ git add .
 ```
-5. Colocar un mensaje de tus cambios:
+
+6. Coloca un mensaje de tus cambios:
 
 ```bash
 $ git commit -m "Mensaje"
 ```
 
-6. Subir tus cambios a tu rama:
+7. Sube tus cambios a tu rama:
 
 ```bash
 $ git push origin <nombre_de_mi_rama>
 ```
 
-7. Crear un Pull Request en GitHub
+8. Crea un Pull Request en éste repositorio de GitHub
