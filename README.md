@@ -70,4 +70,6 @@ $ git commit -m "Mensaje"
 $ git push origin <nombre_de_mi_rama>
 ```
 
-8. Crea un Pull Request en éste repositorio de GitHub
+8. Crea un Pull Request en éste repositorio de GitHub.
+
+9. Coloca una pequeña descripción de lo que harán tus cambios. Puedes tomar como ejemplo [éste](https://github.com/ramrodo/new-port-eyes/pull/1).
