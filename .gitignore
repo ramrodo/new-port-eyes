@@ -1,0 +1,5 @@
+ui-new-port-eyes/node_modules/
+ui-new-port-eyes/build
+ui-new-port-eyes/npm-debug.log*
+ui-new-port-eyes/yarn-debug.log*
+ui-new-port-eyes/yarn-error.log*
