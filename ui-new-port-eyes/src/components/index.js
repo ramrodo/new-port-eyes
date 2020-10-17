@@ -1,0 +1,1 @@
+export Busqueda from './Busqueda';
