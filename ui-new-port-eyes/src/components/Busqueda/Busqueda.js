@@ -1,4 +1,5 @@
-import React, {Fragment, useState} from 'react';
+import React, { Fragment, useState } from 'react';
+import ENUMS from '../../constants/enums'
 import './style.css';
 
 const Busqueda = () => {
@@ -8,11 +9,11 @@ const Busqueda = () => {
     medida: '',
   })
 
-  const handleInputChange = (event) => {
+  const handleChange = (event) => {
     setDatos({
       ...datos,
-      [event.target.name] : event.target.value
-    })
+      [event.target.name]: event.target.value
+    });
   }
 
   const enviarDatos = (event) => {
@@ -26,31 +27,25 @@ const Busqueda = () => {
           <div className="col align-self-center" id="listas">
             <div className="lista1">
               <h2>Variable</h2>
-              <select name="OS">
-                <option defaultValue="0"> Elige una opción </option>
-                <option value="1">Windows Vista</option>
-                <option value="2">Windows 7</option>
-                <option value="3">Windows XP</option>
+              <select name="variable" value={datos.variable} onChange={handleChange}>
+                <option defaultValue={ENUMS.variable.SALDO_VIGENTE_CIERRE_MES}>Elige una opción</option>
+                <option value={ENUMS.variable.SALDO_VIGENTE_CIERRE_MES}>Saldo vigente al cierre de mes</option>
               </select>
             </div>
 
             <div className="lista2">
-              <h2>  Nivel  </h2>
-              <select name="OS">
-                <option defaultValue="0"> Elige una opción </option>
-                <option value="1">Windows Vista</option>
-                <option value="2">Windows 7</option>
-                <option value="3">Windows XP</option>
+              <h2>Nivel</h2>
+              <select name="nivel" value={datos.nivel} onChange={handleChange}>
+                <option defaultValue={ENUMS.nivel.ESTATAL}>Elige una opción</option>
+                <option value={ENUMS.nivel.ESTATAL}>Estatal</option>
               </select>
             </div>
 
             <div className="lista3">
-              <h2>  Medida  </h2>
-              <select name="OS">
-                <option defaultValue="0"> Elige una opción </option>
-                <option value="1">Windows Vista</option>
-                <option value="2">Windows 7</option>
-                <option value="3">Windows XP</option>
+              <h2>Medida</h2>
+              <select name="medida" value={datos.medida} onChange={handleChange}>
+                <option defaultValue={ENUMS.medida.MDP}>Elige una opción</option>
+              <option value={ENUMS.medida.MDP}>Millones De Pesos (MDP)</option>
               </select>
             </div>
 
