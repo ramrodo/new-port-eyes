@@ -6,11 +6,11 @@ const FirstPage = () => {
     <div>
       <h1>NewPortEyes</h1>
       <Busqueda />
-      <Dashboard
+      {/* <Dashboard
         url=""
         container=""
         parameters=""
-      />
+      /> */}
     </div>
   );
 }
