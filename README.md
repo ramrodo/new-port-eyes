@@ -3,7 +3,17 @@ Proyecto para Hackaton BBVA 2020
 
 ## Proyecto Web
 
-Puedes ver la aplicación desplegada [aquí](https://master.d2alqgrvtd56xj.amplifyapp.com/)
+Puedes ver la aplicación desplegada en: https://www.visual-eye.rodomar.mx/
+
+## ¿De qué trata?
+
+**Visual Eye** es una aplicación web que permite obtener el reporte del último mes de Banca Múltiple de la CNBV y generar gráficas usando los indicadores seleccionados.
+
+## ¿Cómo funciona por detrás? La arquitectura
+
+Es una aplicación web creada en **ReactJS** y alojada en **AWS Amplify** para servir la aplicación a través de un dominio personalizado usando **AWS Route53** y **AWS Certificate Manager**.
+
+Para obtener el archivo del último mes de la CNBV, se creó un web scrapper con **Python** y alojado en **AWS Elastic Beanstalk** para que pueda ser usado por la aplicación web.
 
 ## Contribuye
 
