@@ -4,10 +4,15 @@ import './style.css';
 
 const Busqueda = () => {
   const [datos, setDatos] = useState({
+    producto: '',
     variable: '',
     nivel: '',
     medida: '',
+    filtro1: '',
+    filtro2: '',
   })
+
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (event) => {
     setDatos({
@@ -18,7 +23,9 @@ const Busqueda = () => {
 
   const enviarDatos = (event) => {
     event.preventDefault()
+    setLoading(true)
     console.log('enviando datos...' + datos.variable + ' ' + datos.nivel + ' ' + datos.medida)
+    setTimeout(() => { setLoading(false) }, 2000);
   }
 
   return (
@@ -26,6 +33,18 @@ const Busqueda = () => {
         <h2 className="center">Especifica los datos</h2>
         <form className="row" onSubmit={enviarDatos}>
           <div className="col align-self-center" id="listas">
+
+            <div className="lista1">
+              <h2>Producto</h2>
+              <select name="producto" value={datos.producto} onChange={handleChange}>
+                <option defaultValue={ENUMS.producto.PRODUCTO}>Elige una opción</option>
+                <option value={ENUMS.producto.PRODUCTO}>Empresas</option>
+                <option value={ENUMS.producto.PRODUCTO}>Autos</option>
+                <option value={ENUMS.producto.PRODUCTO}>Nomina</option>
+                <option value={ENUMS.producto.PRODUCTO}>Empresas</option>
+              </select>
+            </div>
+
             <div className="lista1">
               <h2>Variable</h2>
               <select name="variable" value={datos.variable} onChange={handleChange}>
@@ -50,7 +69,40 @@ const Busqueda = () => {
               </select>
             </div>
 
-            <button type="submit" className="submit"><center>Buscar</center></button>
+          <div className="lista4">
+            <h2>Indicador</h2>
+            <select name="indicador" value={datos.indicador} onChange={handleChange}>
+              <option defaultValue={ENUMS.indicador.INDICADOR}>Elige una opción</option>
+              <option value={ENUMS.indicador.INDICADOR}>Empresas</option>
+              <option value={ENUMS.indicador.INDICADOR}>Autos</option>
+              <option value={ENUMS.producto.INDICADOR}>Nomina</option>
+              <option value={ENUMS.producto.INDICADOR}>Empresas</option>
+            </select>
+          </div>
+
+          <div className="lista5">
+            <h2>Filtro opcional I</h2>
+            <select name="filtro1" value={datos.FILTRO1} onChange={handleChange}>
+              <option defaultValue={ENUMS.filtro1.FILTRO1}>Elige una opción</option>
+              <option value={ENUMS.filtro1.FILTRO1}>Nombre</option>
+              <option value={ENUMS.filtro1.FILTRO1}>Cartera vencida</option>
+              <option value={ENUMS.filtro1.FILTRO1}>Nomina</option>
+              <option value={ENUMS.filtro1.FILTRO1}>Empresas</option>
+            </select>
+          </div>
+
+          <div className="lista6">
+            <h2>Filtro opcional I</h2>
+            <select name="filtro2" value={datos.FILTRO2} onChange={handleChange}>
+              <option defaultValue={ENUMS.filtro2.FILTRO2}>Elige una opción</option>
+              <option value={ENUMS.filtro2.FILTRO2}>Nombre</option>
+              <option value={ENUMS.filtro2.FILTRO2}>Cartera vencida</option>
+              <option value={ENUMS.filtro2.FILTRO2}>Nomina</option>
+              <option value={ENUMS.filtro2.FILTRO2}>Empresas</option>
+            </select>
+          </div>
+
+          <button type="submit" className="submit"><center>{loading ? 'Procesando...' : 'Buscar'}</center></button>
           </div>
         </form>
         </Fragment>
