@@ -73,10 +73,7 @@ const Busqueda = () => {
             <h2>Indicador</h2>
             <select name="indicador" value={datos.indicador} onChange={handleChange}>
               <option defaultValue={ENUMS.indicador.INDICADOR}>Elige una opción</option>
-              <option value={ENUMS.indicador.INDICADOR}>Empresas</option>
-              <option value={ENUMS.indicador.INDICADOR}>Autos</option>
-              <option value={ENUMS.producto.INDICADOR}>Nomina</option>
-              <option value={ENUMS.producto.INDICADOR}>Empresas</option>
+              <option value={ENUMS.indicador.SALDO_TOTAL}>Saldo total</option>
             </select>
           </div>
 
@@ -84,10 +81,7 @@ const Busqueda = () => {
             <h2>Filtro opcional I</h2>
             <select name="filtro1" value={datos.FILTRO1} onChange={handleChange}>
               <option defaultValue={ENUMS.filtro1.FILTRO1}>Elige una opción</option>
-              <option value={ENUMS.filtro1.FILTRO1}>Nombre</option>
-              <option value={ENUMS.filtro1.FILTRO1}>Cartera vencida</option>
-              <option value={ENUMS.filtro1.FILTRO1}>Nomina</option>
-              <option value={ENUMS.filtro1.FILTRO1}>Empresas</option>
+              <option value={ENUMS.filtro1.NOMBRE}>Nombre</option>
             </select>
           </div>
 
@@ -95,10 +89,7 @@ const Busqueda = () => {
             <h2>Filtro opcional I</h2>
             <select name="filtro2" value={datos.FILTRO2} onChange={handleChange}>
               <option defaultValue={ENUMS.filtro2.FILTRO2}>Elige una opción</option>
-              <option value={ENUMS.filtro2.FILTRO2}>Nombre</option>
-              <option value={ENUMS.filtro2.FILTRO2}>Cartera vencida</option>
-              <option value={ENUMS.filtro2.FILTRO2}>Nomina</option>
-              <option value={ENUMS.filtro2.FILTRO2}>Empresas</option>
+              <option value={ENUMS.filtro2.CARTERA_VENCIDA}>Cartera vencida</option>
             </select>
           </div>
 

@@ -12,12 +12,12 @@ export default {
     MDP: 'MDP',
   },
   indicador: {
-    INDICADOR: 'INDICADOR'
+    SALDO_TOTAL: 'SALDO_TOTAL'
   },
   filtro1: {
-    FILTRO1: 'FILTRO1'
+    NOMBRE: 'NOMBRE'
   },
   filtro2: {
-    FILTRO2: 'FILTRO2'
+    CARTERA_VENCIDA: 'CARTERA_VENCIDA'
   },
 };
