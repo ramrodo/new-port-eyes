@@ -1,6 +1,10 @@
 # NewPortEyes
 Proyecto para Hackaton BBVA 2020
 
+## Pitch
+
+Video: https://drive.google.com/file/d/12bIV8Yv6gQmtCa32n-p2DMkmnnqCSGsU/view
+
 ## Proyecto Web
 
 Puedes ver la aplicación desplegada en: https://www.visual-eye.rodomar.mx/
