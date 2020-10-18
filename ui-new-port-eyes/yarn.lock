@@ -3172,6 +3172,11 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+amazon-quicksight-embedding-sdk@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/amazon-quicksight-embedding-sdk/-/amazon-quicksight-embedding-sdk-1.0.11.tgz#e614c18e7b5ccd8b5a34b79e28cfe70ce5dfeb40"
+  integrity sha512-EVRSrqWhc2Q8cRYoPViknxA4H4JwROekpgHpXG/0x8ofy2YgYUJCrzl8uTHmsFoshcAMViIPo4lExhKsYB5Lxg==
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
