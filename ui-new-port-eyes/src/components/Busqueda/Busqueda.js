@@ -23,6 +23,7 @@ const Busqueda = () => {
 
   return (
     <Fragment>
+        <h2 className="center">Especifica los datos</h2>
         <form className="row" onSubmit={enviarDatos}>
           <div className="col align-self-center" id="listas">
             <div className="lista1">
@@ -52,12 +53,6 @@ const Busqueda = () => {
             <button type="submit" className="submit"><center>Buscar</center></button>
           </div>
         </form>
-
-        <ul>
-            <li>{datos.variable}</li>
-            <li>{datos.nivel}</li>
-            <li>{datos.medida}</li>
-        </ul>
         </Fragment>
     );
 }

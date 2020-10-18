@@ -24,13 +24,15 @@ jsonData = step_2.split('; var columns = ', 1)[0]
 baseURL = 'https://portafolioinfo.cnbv.gob.mx'
 listData = eval(jsonData)
 arrayLinks = []
-for item in listData:
-    year = item[1]
-    month = item[2]
-    fileData = item[4]
-    linkToDownload = baseURL + fileData
-    arrayLinks.append(linkToDownload)
+linkToDownload = baseURL + listData[0][4]
+# for item in listData:
+#     year = item[1]
+#     month = item[2]
+#     fileData = item[4]
+#     linkToDownload = baseURL + fileData
+#     arrayLinks.append(linkToDownload)
 
-print(arrayLinks[0])
+# print(arrayLinks[0])
+print(linkToDownload)
 
 
