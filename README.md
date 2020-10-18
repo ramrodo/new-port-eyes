@@ -5,6 +5,8 @@ Proyecto para Hackaton BBVA 2020
 
 Puedes ver la aplicación desplegada en: https://www.visual-eye.rodomar.mx/
 
+**NOTA:** Para poder probar la aplicación web correctamente se necesita instalar la extensión de [Google Chrome CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=es) para que pueda obtener la petición correctamente.
+
 ## ¿De qué trata?
 
 **Visual Eye** es una aplicación web que permite obtener el reporte del último mes de Banca Múltiple de la CNBV y generar gráficas usando los indicadores seleccionados.
