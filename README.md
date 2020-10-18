@@ -15,7 +15,7 @@ Puedes ver la aplicación desplegada en: https://www.visual-eye.rodomar.mx/
 
 Es una aplicación web creada en **ReactJS** y alojada en **AWS Amplify** para servir la aplicación a través de un dominio personalizado usando **AWS Route53** y **AWS Certificate Manager**.
 
-Para obtener el archivo del último mes de la CNBV, se creó un web scrapper con **Python** y alojado en **AWS Elastic Beanstalk** para que pueda ser usado por la aplicación web.
+Para obtener el archivo del último mes de la CNBV, se creó un web scrapper con **Python** y alojado en **AWS Elastic Beanstalk** para que pueda ser usado por la aplicación web a través de una API REST en **Flask**.
 
 Las gráficas se generan mandando los datos a **AWS QuickSight** para generar diferentes gráficas.
 
