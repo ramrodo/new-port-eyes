@@ -17,6 +17,8 @@ Es una aplicación web creada en **ReactJS** y alojada en **AWS Amplify** para s
 
 Para obtener el archivo del último mes de la CNBV, se creó un web scrapper con **Python** y alojado en **AWS Elastic Beanstalk** para que pueda ser usado por la aplicación web.
 
+Las gráficas se generan mandando los datos a **AWS QuickSight** para generar diferentes gráficas.
+
 ## Contribuye
 
 ### Requisitos
