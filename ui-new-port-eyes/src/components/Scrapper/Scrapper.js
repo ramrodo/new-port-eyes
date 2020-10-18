@@ -8,7 +8,7 @@ const Scrapper = () => {
 
   const fetchFiles = () => {
     setLoading(true);
-    fetch('http://flask-env.eba-3qramei3.us-east-1.elasticbeanstalk.com/last-banca', { crossDomain: true })
+    fetch('https://flask-env.eba-3qramei3.us-east-1.elasticbeanstalk.com/last-banca', { crossDomain: true })
       .then(response => response.json())
       .then(data => {
         setLastUrl(data.url);
