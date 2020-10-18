@@ -1,0 +1,75 @@
+.scrapper {
+  text-align: center;
+  margin: auto;
+  margin: 2rem 0;
+}
+
+.link {
+  color: blue;
+  font-size: large;
+}
+
+.submit{
+  color:#fff;
+  font-size: 20px;
+  padding: 10px 0;
+  background: #14549C;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 20%;
+  margin: auto;
+  display: block;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #2b67ac;
+}
+
+.download{
+  color:#fff;
+  font-size: 20px;
+  padding: 10px 0;
+  background: gray;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 20%;
+  margin: auto;
+  display: inline-block;
+  line-height: 1.5;
+  cursor: pointer;
+  margin: 0 2rem;
+}
+
+.download:hover {
+  background: rgb(163, 155, 155);
+}
+
+.process{
+  color:#fff;
+  font-size: 20px;
+  padding: 10px 0;
+  background: rgb(53, 172, 53);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 20%;
+  margin: auto;
+  display: inline-block;
+  line-height: 1.5;
+  cursor: pointer;
+  margin: 0 2rem;
+}
+
+.process:hover {
+  background: rgb(86, 197, 86);
+}
+
+.lastUrl {
+  margin-top: 2rem;
+}
+
+.url {
+  margin: 2rem 0;
+  font-size: large;
+}
